@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --menuLargura: 50%;
+}
+
+.Menu {
+  background-color: black;
+  position: fixed;
+  width: var(--menuLargura);
+  height: 100vh;
+  left: 0;
+}

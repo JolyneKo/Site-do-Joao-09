@@ -1,7 +1,7 @@
 import logo from '../Images/logo.png';
 import InputsPesquisar from './InputsPesquisar';
 
-function Header() {
+function Header({ onIconClick }) {
   return (
     <header className="barra-superior">
       <img src={logo} alt="logo" className="nav_logo"/>      
@@ -24,7 +24,7 @@ function Header() {
         </li>
       </ul>
 
-      <div className="menu-icon">
+      <div className="menu-icon" onClick={onIconClick}>
         <div className="linha"></div>
         <div className="linha"></div>
         <div className="linha"></div>

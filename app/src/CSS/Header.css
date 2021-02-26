@@ -128,6 +128,10 @@
   .nav_inputs {
     display: none;
   }
+
+  .menu-icon {
+    display: none;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 888px) {
@@ -178,7 +182,87 @@
   .nav_inputs {
     display: none;
   }
+
+  .menu-icon {
+    display: none;
+  }
 }
 
 @media (max-width: 769px) {
+  .barra-superior {
+    width: 100%;
+    height: var(--headerAltura);
+    background-color: var(--headerColor);
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .nav_logo {
+    width: 150px;
+    height: auto;
+    margin: 20px;
+  }
+
+  .nav_links {
+    display: none;
+  }
+
+  .nav_inputs {
+    display: none;
+  }
+
+  .menu-icon {
+    position: absolute;
+    right: 30px;
+  }
+
+  .menu-icon .linha {
+    width: 40px;
+    height: 5px;
+    margin: 10px 0;
+    background-color: black;
+  }
+
+  .Menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .Menu h2 {
+    color: white;
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+
+  .menu_links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    line-height: 2rem;
+    width: 100%;
+  }
+
+  .menu_links .link {
+    border-top: 2px orange solid;
+    padding: 10px 20px;
+  }
+
+  .menu_links .link a {
+    color: orange;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  .menu_links .link a:hover {
+    text-decoration: underline;
+  }
+
+  .menu_links .links a:active {
+    text-decoration: underline;
+  }
 }
