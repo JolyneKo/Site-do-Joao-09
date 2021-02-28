@@ -14,7 +14,7 @@ function InputsPesquisar() {
 
   return (
     <div className="nav_inputs">
-      <input type="search" className="input_search" onChange={onChange}/>
+      <input type="search" className="input_search" onChange={onChange} placeholder="Pesquise Aqui"/>
       <input type="submit" value="Search" className="input_submit" onClick={pesquisar}/>
     </div>
   )
